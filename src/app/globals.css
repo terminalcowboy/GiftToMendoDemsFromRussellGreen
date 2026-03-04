@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dem-blue: #0033A0;
+  --color-dem-blue-dark: #002266;
+  --color-dem-blue-light: #1a5cc8;
+  --color-dem-red: #BF0A30;
+  --color-dem-red-dark: #8B0000;
+  --color-dem-white: #FFFFFF;
+  --color-dem-gray-50: #f8fafc;
+  --color-dem-gray-100: #f1f5f9;
+  --color-dem-gray-200: #e2e8f0;
+  --color-dem-gray-300: #cbd5e1;
+  --color-dem-gray-600: #475569;
+  --color-dem-gray-700: #334155;
+  --color-dem-gray-800: #1e293b;
+  --color-dem-gray-900: #0f172a;
+}
+
+/* Prose styles for markdown content */
+.prose h2 {
+  color: var(--color-dem-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-dem-gray-200);
+}
+
+.prose h3 {
+  color: var(--color-dem-gray-800);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: var(--color-dem-gray-700);
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+  color: var(--color-dem-gray-700);
+}
+
+.prose a {
+  color: var(--color-dem-blue);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--color-dem-blue-dark);
+}
+
+.prose strong {
+  color: var(--color-dem-gray-900);
+  font-weight: 600;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--color-dem-blue);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--color-dem-gray-600);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
