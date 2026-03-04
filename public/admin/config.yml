@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  name: github
+  repo: terminalcowboy/GiftToMendoDemsFromRussellGreen
+  branch: master
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
