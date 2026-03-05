@@ -1,10 +1,10 @@
 ---
 name: "Mike McGuire"
-title: "Lt. Governor of California"
+title: "State Senator, SD-02 & President pro Tempore"
 party: "Democrat"
 level: "state"
 order: 4
-image: "/images/officials/mike-mcguire.jpg"
-website: "https://ltg.ca.gov/"
+image: "/images/officials/mike-mcguire.jpg"
+website: "https://sd02.senate.ca.gov/"
 ---
-Lt. Governor Mike McGuire previously represented Senate District 2, which includes Mendocino County. He has been a tireless advocate for North Coast communities.
+Senator Mike McGuire represents Senate District 2, which includes Mendocino County. He serves as President pro Tempore of the California State Senate and has been a tireless advocate for North Coast communities.

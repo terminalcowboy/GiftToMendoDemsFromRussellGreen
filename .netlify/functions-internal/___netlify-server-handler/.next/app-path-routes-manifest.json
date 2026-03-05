@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/agendas/page": "/agendas",
+  "/clubs/page": "/clubs",
+  "/contact/page": "/contact",
+  "/donate/page": "/donate",
+  "/events/page": "/events",
+  "/favicon.ico/route": "/favicon.ico",
+  "/get-involved/page": "/get-involved",
+  "/news/[slug]/page": "/news/[slug]",
+  "/news/page": "/news",
+  "/officials/page": "/officials",
+  "/page": "/",
+  "/platform/page": "/platform"
+}

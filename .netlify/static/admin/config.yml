@@ -1,0 +1,147 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "content/pages/home.md"
+        fields:
+          - { label: "Hero Title", name: "heroTitle", widget: "string" }
+          - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
+          - { label: "Mission Title", name: "missionTitle", widget: "string" }
+          - { label: "Mission Text", name: "missionText", widget: "string" }
+          - { label: "CTA Title", name: "ctaTitle", widget: "string" }
+          - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - { label: "CTA Button Text", name: "ctaButtonText", widget: "string" }
+          - { label: "CTA Button Link", name: "ctaButtonLink", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "about"
+        label: "About"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "platform"
+        label: "What We Stand For"
+        file: "content/pages/platform.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "donate"
+        label: "Donate"
+        file: "content/pages/donate.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Intro Text", name: "introText", widget: "string" }
+          - { label: "PayPal Link", name: "paypalLink", widget: "string" }
+          - { label: "ActBlue Link", name: "actblueLink", widget: "string" }
+          - { label: "Check Payable To", name: "checkPayableTo", widget: "string" }
+          - { label: "Check Mail To", name: "checkMailTo", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "content/pages/contact.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Facebook", name: "facebook", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - name: "get-involved"
+        label: "Get Involved"
+        file: "content/pages/get-involved.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Time", name: "time", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "officials"
+    label: "Officials"
+    folder: "content/officials"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Party", name: "party", widget: "string" }
+      - label: "Level"
+        name: "level"
+        widget: "select"
+        options:
+          - { label: "Federal", value: "federal" }
+          - { label: "State", value: "state" }
+          - { label: "County", value: "county" }
+          - { label: "Local", value: "local" }
+      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Website", name: "website", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "clubs"
+    label: "Clubs"
+    folder: "content/clubs"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Area", name: "area", widget: "string" }
+      - { label: "Meeting Schedule", name: "meetingSchedule", widget: "string" }
+      - { label: "Contact", name: "contact", widget: "string" }
+      - { label: "Website", name: "website", widget: "string" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Order", name: "order", widget: "number" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "documents"
+    label: "Documents"
+    folder: "content/documents"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - { label: "Agenda", value: "agenda" }
+          - { label: "Minutes", value: "minutes" }
+      - { label: "PDF Link", name: "pdfLink", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
